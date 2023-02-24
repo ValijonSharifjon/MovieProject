@@ -3,7 +3,7 @@ const AppFilter=({updateFilterHandler,filter})=>{
     return (
         <div className="btn-group">
         {btnsArr.map(item=>(
-            <button key={item.name} className={`btn ${filter==item.name?'btn-dark':'btn-outline-dark'}`} type="button" onClick={()=>updateFilterHandler(item.name)} >{item.label}</button>
+            <button key={item.name} className={`btn ${filter===item.name?'btn-dark':'btn-outline-dark'}`} type="button" onClick={()=>updateFilterHandler(item.name)} >{item.label}</button>
         ))}
     </div>
     )
